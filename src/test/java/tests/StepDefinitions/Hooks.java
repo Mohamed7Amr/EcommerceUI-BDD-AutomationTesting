@@ -3,6 +3,7 @@ package tests.StepDefinitions;
 import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 
 public class Hooks {
@@ -17,6 +18,10 @@ public class Hooks {
 
         driver.get("http://magento-demo.lexiconn.com/");
         driver.manage().window().maximize();
+
+        String expectedResult = "http://magento-demo.lexiconn.com/";
+        String actualResult = driver.getCurrentUrl();
+        Assert.assertEquals(actualResult,expectedResult);
     }
 
     @After

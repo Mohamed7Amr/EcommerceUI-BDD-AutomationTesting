@@ -1,65 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="28.819" tests="4" skipped="0" failures="1" errors="0">
-<testcase classname="user logs-in using username and password" name="user logs-in using valid username and valid password" time="8.385">
+<testsuite name="Cucumber" time="57.171" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Logged user could select different Categories" name="User can add product from Accessories to shopping-cart" time="26.406">
+<system-out><![CDATA[
+Given User logs-in to his account...........................................passed
+When hovers on the Accessories category.....................................passed
+And chooses shoes subcategory...............................................passed
+Then redirected to the shoes subcategory showing Shoes header...............passed
+When filters all pairs of shoes by Price from low to high...................passed
+Then all pairs of shoes will be sorted by price.............................passed
+When views details of the chosen shoes product..............................passed
+Then redirected to Dorian shoes details.....................................passed
+When selects color of the shoes product.....................................passed
+And chooses size of the shoes product.......................................passed
+And adds to cart............................................................passed
+Then redirected to the checkout-cart........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user logs-in using username and password" name="user logs-in using valid username and valid password" time="8.315">
 <system-out><![CDATA[
 Given user navigates to the login webpage...................................passed
 When user enters "boogiemon@divalia.cf" and "123456"........................passed
 Then user is logged-in to his account.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user logs-in using username and password" name="user logs-in using valid username and invalid password" time="6.323">
+<testcase classname="user logs-in using username and password" name="user logs-in using valid username and invalid password" time="6.154">
 <system-out><![CDATA[
 Given user navigates to the login webpage...................................passed
 When user enters "boogiemon@divalia.cf" and "654321"........................passed
 Then user is not logged-in to his account...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user registers using his personal info" name="user registers with valid data" time="6.994">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(), 'Thank you for registering with Madison Island.')]&quot;}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1833061ad1552144c39d4f1db0f0ae33, findElement {using=xpath, value=//span[contains(text(), 'Thank you for registering with Madison Island.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2664/devtool..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1833061ad1552144c39d4f1db0f0ae33">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(), 'Thank you for registering with Madison Island.')]"}
-  (Session info: chrome=113.0.5672.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.3', revision: 'e5e76298c3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1833061ad1552144c39d4f1db0f0ae33, findElement {using=xpath, value=//span[contains(text(), 'Thank you for registering with Madison Island.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:2664/devtool..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1833061ad1552144c39d4f1db0f0ae33
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at pages.RegistrationPage.successRegistrationMsg(RegistrationPage.java:78)
-	at tests.StepDefinitions.RegistrationStepDef.registerSuccessfully(RegistrationStepDef.java:38)
-	at ✽.he receives a success message of registration(file:///C:/Users/moham/IdeaProjects/CucumberProject/src/main/Features/register.feature:12)
-]]>
-</failure>
+<testcase classname="user registers using his personal info" name="user registers with valid data" time="8.348">
 <system-out><![CDATA[
 Given user navigates to the register webpage................................passed
 When user inserts needed info...............................................passed
 And submit..................................................................passed
-Then he receives a success message of registration..........................failed
+Then he receives a success message of registration..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user registers using his personal info" name="user tries to register with same info he used before to register" time="6.891">
+<testcase classname="user registers using his personal info" name="user tries to register with same info he used before to register" time="7.654">
 <system-out><![CDATA[
 Given user navigates to the register webpage................................passed
 When user inserts needed info...............................................passed

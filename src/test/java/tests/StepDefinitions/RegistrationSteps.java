@@ -6,7 +6,7 @@ import pages.HomePage;
 import pages.RegistrationPage;
 
 
-public class RegistrationStepDef {
+public class RegistrationSteps {
 
     HomePage hp = new HomePage(Hooks.driver);
     RegistrationPage rp = new RegistrationPage(Hooks.driver);//TestBase.DRIVER
@@ -23,7 +23,7 @@ public class RegistrationStepDef {
     public void insertUserInfo()
     {
         rp.clearInputs();
-        rp.insertRegistrationInfo("Ahmed","Tarek","baeanchik@correoparacarlos.ml","123456");
+        rp.insertRegistrationInfo("Ahmed","Tarek","kanoce4011@ratedane.com","123456");
     }
 
     @And("submit")

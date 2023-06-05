@@ -15,7 +15,7 @@ public class LoginPage {
 
     /*********************************************CONSTRUCTORS****************************************************/
 
-//Needed because i will send the driver to be used as parameter w/ PageFactory so it can be used w/ @FindBy to locate elements
+//Needed because i will send the driver to be used as parameter w/ PageFactory, thus  can be used w/ @FindBy to locate elements
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
