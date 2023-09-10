@@ -16,7 +16,6 @@ public class ShoesSubcategoryPage {
 
     /*********************************************GLOBAL_VARIABLES************************************************/
     public WebDriver driver;
-//    JavascriptExecutor js = (JavascriptExecutor) driver;
 
 
     /*********************************************CONSTRUCTORS****************************************************/
@@ -100,8 +99,9 @@ public class ShoesSubcategoryPage {
     {
         int elementsSize = shoesPrices.size();
 
-        /*Notice that i already know from the DOM that it's only 3 elements,thus max index is 2, but if i has become 2,
-        what is i+1?->3,IndexOutOfBoundsError!. thus had to make condition i < elementsSize-1
+        /**
+         * Notice that i already know from the DOM that it's only 3 elements,thus max index is 2, but if i has become 2,
+         * what is i+1?->3,IndexOutOfBoundsError!. thus had to make condition i < elementsSize-1
          */
         for(int i =0; i<elementsSize-1; i++)
         {

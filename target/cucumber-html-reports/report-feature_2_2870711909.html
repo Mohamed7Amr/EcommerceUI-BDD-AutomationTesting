@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>05 Jun 2023, 23:18</td>
+      <td>16 Jul 2023, 03:48</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">user registers using his personal info</td>
-          <td      class="passed"    >8</td>
-          <td >0</td>
+          <td      class="passed"    >7</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
 
-          <td  class="passed"    >2</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="6204531800">6.204</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="5141185600">5.141</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">user registers using his personal info</span>
 
@@ -193,7 +193,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.699</span>
+  <span class="lead-duration duration">2.363</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -236,7 +236,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user navigates to the register webpage</span>
 
-  <span class="lead-duration duration">0.603</span>
+  <span class="lead-duration duration">0.670</span>
 
 </div>
 
@@ -263,7 +263,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user inserts needed info</span>
 
-  <span class="lead-duration duration">0.810</span>
+  <span class="lead-duration duration">0.836</span>
 
 </div>
 
@@ -290,7 +290,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">submit</span>
 
-  <span class="lead-duration duration">2.285</span>
+  <span class="lead-duration duration">0.856</span>
 
 </div>
 
@@ -330,12 +330,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.047</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">user registers with valid data</span>
 
@@ -346,7 +346,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -368,7 +368,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">tests.StepDefinitions.Hooks.setUpEnvironment()</span>
 
-  <span class="lead-duration duration">2.396</span>
+  <span class="lead-duration duration">2.548</span>
 
           </div>
 
@@ -385,9 +385,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -397,15 +397,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">he receives a success message of registration</span>
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -413,6 +413,43 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(), 'Thank you for registering with Madison Island.')]&quot;}
+  (Session info: chrome=114.0.5735.111)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d781508b5be288f848b52175469d330, findElement {using=xpath, value=//span[contains(text(), 'Thank you for registering with Madison Island.')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.111, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12711}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:12711/devtoo..., se:cdpVersion: 114.0.5735.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d781508b5be288f848b52175469d330
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.RegistrationPage.successRegistrationMsg(RegistrationPage.java:78)
+	at tests.StepDefinitions.RegistrationSteps.registerSuccessfully(RegistrationSteps.java:38)
+	at &#10045;.he receives a success message of registration(file:///C:/Users/moham/IdeaProjects/CucumberProject/src/main/resources/Features/register.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -432,7 +469,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -444,7 +481,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
@@ -475,10 +512,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.426</span>
+  <span class="lead-duration duration">2.677</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -491,14 +528,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -510,7 +547,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -518,7 +555,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user navigates to the register webpage</span>
 
-  <span class="lead-duration duration">0.662</span>
+  <span class="lead-duration duration">0.755</span>
 
 </div>
 
@@ -545,7 +582,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user inserts needed info</span>
 
-  <span class="lead-duration duration">0.826</span>
+  <span class="lead-duration duration">0.866</span>
 
 </div>
 
@@ -572,7 +609,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">submit</span>
 
-  <span class="lead-duration duration">0.937</span>
+  <span class="lead-duration duration">1.056</span>
 
 </div>
 
@@ -612,10 +649,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.053</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -628,11 +665,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details ">
+  <div id="element-10" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -644,13 +681,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-10" class="inner-level collapse collapsable-details ">
+    <div id="before-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">tests.StepDefinitions.Hooks.setUpEnvironment()</span>
 
-  <span class="lead-duration duration">2.977</span>
+  <span class="lead-duration duration">3.318</span>
 
           </div>
 
@@ -667,7 +704,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -679,7 +716,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -687,7 +724,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">he receives a message says that this user has already been registered</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.053</span>
 
 </div>
 
@@ -714,7 +751,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -726,13 +763,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-13" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">tests.StepDefinitions.Hooks.cleanUpEnvironment()</span>
 
-  <span class="lead-duration duration">2.212</span>
+  <span class="lead-duration duration">2.210</span>
 
           </div>
 

@@ -1,7 +1,7 @@
 @regression
 
 
-Feature: Logged user could select different Categories
+Feature: Logged-in user could select different Categories
 
   #Scenario 1....
   Scenario: User can add product from Accessories to shopping-cart

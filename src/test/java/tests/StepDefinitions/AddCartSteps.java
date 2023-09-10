@@ -77,6 +77,7 @@ public class AddCartSteps {
         String expectedResult = "DORIAN PERFORATED OXFORD";
         String actualResult = dsp.getShoesTitle();
 
+
         Assert.assertTrue(actualResult.contains(expectedResult),"Details of the chosen Dorian shoes is not displayed");
     }
 
